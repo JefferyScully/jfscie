@@ -46,9 +46,9 @@ def home():
     return render_template('home.html', posts=posts, user_data=user_data, resources=CDN.render()) # Render_template is a method that takes in the file, & (what is passed to HTML = python object)
 
 
-@app.route("/about") # This tells flask to create an about path
-def about():
-    return render_template('about.html', title='About')
+# @app.route("/about") # This tells flask to create an about path
+# def about():
+#     return render_template('about.html', title='About')
 
 # I need to add the account setting page and the Main advertizement page(possibly using hugo and template to get this off with a bang)
 
