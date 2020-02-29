@@ -5,7 +5,10 @@ import json
 from bokeh.embed import json_item
 from bokeh.plotting import figure
 from bokeh.resources import CDN
-# from bokeh.sampledata.iris import flowers
+
+# This grabs data from the database
+from flask_jfscie.models import User, Post
+from flask_jfscie.plot import make_plot
 
 
 # This would be the data that you recieved
@@ -35,10 +38,6 @@ user_data = [
         'handle':'her'}
 ]
 
-def make_plot():
-    p = figure(plot_width=400, plot_height=400, sizing_mode="scale_width")
-    p.circle([1, 2, 3, 4, 5], [6, 7, 2, 4, 5], size=15, line_color="navy", fill_color="orange", fill_alpha=0.5)
-    return p
 
 @app.route("/")
 @app.route("/home")
@@ -57,7 +56,7 @@ def home():
 #background process happening without any refreshing
 @app.route('/row_click', methods=['POST'])
 def background_process_test():
-    member = request.form['member_id']
+    member = request.form['row_id']
     return jsonify({"result":"success", "data":member})
 
 @app.route('/plot')
