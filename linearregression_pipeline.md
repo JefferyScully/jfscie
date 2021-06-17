@@ -1,20 +1,20 @@
 
 # Table of Contents
 
-1.  [Train LinearRegression Model](#org3e1e0bc)
-2.  [Define Variables](#org6ec88be)
-    1.  [DB table column - HL<sub>PCT</sub>](#orgf46e27b)
-    2.  [DB table column - PCT<sub>change</sub>](#org31cbe69)
-    3.  [Python Variable - X](#org94f2716)
-    4.  [Python Variable - X<sub>lately</sub>](#orgb5a7f2f)
-    5.  [Python Variable - y](#org5d1aecb)
-    6.  [Python Variable - X<sub>train</sub>](#org09aefbf)
-    7.  [Python Variable - y<sub>train</sub>](#org009388c)
-    8.  [Python Variable - X<sub>test</sub>](#org8aea741)
-    9.  [Python Variable - y<sub>test</sub>](#org1ac478e)
-3.  [How LinearRegression Works](#orga2fe33b)
-4.  [Save Model, using Pickle](#org4871617)
-5.  [Create](#org704564a)
+1.  [Train LinearRegression Model](#org46ff185)
+2.  [Define Variables](#orgea51cd9)
+    1.  [DB table column - HL<sub>PCT</sub>](#orga18ee4f)
+    2.  [DB table column - PCT<sub>change</sub>](#orgcd819a9)
+    3.  [Python Variable - X](#org2d64454)
+    4.  [Python Variable - X<sub>lately</sub>](#org871e774)
+    5.  [Python Variable - y](#org65b49a6)
+    6.  [Python Variable - X<sub>train</sub>](#orgdccc42e)
+    7.  [Python Variable - y<sub>train</sub>](#orge26b450)
+    8.  [Python Variable - X<sub>test</sub>](#orga0b9c1a)
+    9.  [Python Variable - y<sub>test</sub>](#org327d476)
+3.  [How LinearRegression Works](#orgbdd1da8)
+4.  [Save Model, using Pickle](#org21623d8)
+5.  [Create](#org6089a92)
 
 Quandl api key - 6UfyTfL7MDo26ypfYzVd
 Include pydoc
@@ -22,7 +22,7 @@ Include pip freeze output
 Include try blocks
 
 
-<a id="org3e1e0bc"></a>
+<a id="org46ff185"></a>
 
 # Train LinearRegression Model
 
@@ -45,69 +45,71 @@ Adj. Close:
 Adj. Volume:
 
 
-<a id="org6ec88be"></a>
+<a id="orgea51cd9"></a>
 
 # Define Variables
 
 
-<a id="orgf46e27b"></a>
+<a id="orga18ee4f"></a>
 
 ## DB table column - HL<sub>PCT</sub>
 
 
-<a id="org31cbe69"></a>
+<a id="orgcd819a9"></a>
 
 ## DB table column - PCT<sub>change</sub>
 
 -   This is the percent change of closing price verses the opening opening price
-$f(x) = 1$
 
-<a id="org94f2716"></a>
+\(PCT\_change = \frac{Closing\_Price - Opening\_Price}{Opening\_Price} \times 100 \)
+
+
+<a id="org2d64454"></a>
 
 ## Python Variable - X
 
 
-<a id="orgb5a7f2f"></a>
+<a id="org871e774"></a>
 
 ## Python Variable - X<sub>lately</sub>
 
 
-<a id="org5d1aecb"></a>
+<a id="org65b49a6"></a>
 
 ## Python Variable - y
 
 
-<a id="org09aefbf"></a>
+<a id="orgdccc42e"></a>
 
 ## Python Variable - X<sub>train</sub>
 
 
-<a id="org009388c"></a>
+<a id="orge26b450"></a>
 
 ## Python Variable - y<sub>train</sub>
 
 
-<a id="org8aea741"></a>
+<a id="orga0b9c1a"></a>
 
 ## Python Variable - X<sub>test</sub>
 
 
-<a id="org1ac478e"></a>
+<a id="org327d476"></a>
 
 ## Python Variable - y<sub>test</sub>
 
 
-<a id="orga2fe33b"></a>
+<a id="orgbdd1da8"></a>
 
 # How LinearRegression Works
 
 
-<a id="org4871617"></a>
+<a id="org21623d8"></a>
 
 # Save Model, using Pickle
 
 
-<a id="org704564a"></a>
+<a id="org6089a92"></a>
 
 # Create
 
