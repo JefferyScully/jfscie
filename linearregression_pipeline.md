@@ -60,7 +60,7 @@ Adj. Volume:
 ## DB table column - PCT<sub>change</sub>
 
 -   This is the percent change of closing price verses the opening opening price
-
+$f(x) = 1$
 
 <a id="org94f2716"></a>
 
